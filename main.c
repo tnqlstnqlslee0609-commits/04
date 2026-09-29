@@ -2,19 +2,36 @@
 
 int main(void)
 {
-    int x, y, z, m;
-    int a, b, c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    int op1, op2;
+    int res;
 
-    //y=ax2+bx+c
-    y = a*x*x + b*x + c;
+    //scanf
+    printf("Input two integers:");
+    scanf("%i %i", &op1, &op2);
 
-    //m=x+y+z/3
-    m = (x + y + z) / 3;
+    //operations
+    res = op1 + op2;
+    //printf
+    printf("%i + %i = %i\n", op1, op2, res);
 
-    printf("y=%d, m=%d\n", y, m);
+    //operations
+    res = op1 - op2;
+    //printf
+    printf("%i - %i = %i\n", op1, op2, res);
+
+    //operations
+    res = op1 * op2;
+    //printf
+    printf("%i * %i = %i\n", op1, op2, res);
+
+    //operations
+    res = op1 / op2;
+    //printf
+    printf("%i / %i = %i\n", op1, op2, res);
+
+    //operations
+    res = op1 % op2;
+    //printf
+    printf("%i %% %i = %i\n", op1, op2, res);
+
 }
